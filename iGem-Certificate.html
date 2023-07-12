@@ -22,6 +22,10 @@
         left: 10px;
     }
 
+    .certificate {
+        /* background-size: cover; */
+    }
+
     .container {
         background-image: url("https://iguru-serverless-stage.s3-ap-southeast-1.amazonaws.com/media/iGem-certificate-bg.svg");
         height: 100vh;
@@ -31,6 +35,24 @@
         align-items: center;
         position: relative;
         margin: 0px;
+
+    }
+
+    .infoContent {
+        background-image: url("https://iguru-serverless-stage.s3-ap-southeast-1.amazonaws.com/media/iGem-certificate-bg.svg");
+        /* background-color: red; */
+        background-repeat: no-repeat;
+        height: 50rem;
+        background-position: center;
+        text-align: center;
+        /* display: flex;
+        position: relative;
+        top: 1vh;
+        left: 2vw;
+        height: 10vh;
+        width: 52vw;
+        background-color: darkkhaki;
+        background-position: center; */
 
     }
 
@@ -123,15 +145,6 @@
 
     }
 
-    .infoContent {
-        text-align: center;
-        display: flex;
-        position: relative;
-        top: 1vh;
-        left: 2vw;
-        height: 10vh;
-        width: 52vw;
-    }
 
     .heading {
         color: #010000;
@@ -281,62 +294,52 @@
 
     }
 </style>
+<!-- <img src="https://iguru-serverless-test.s3-ap-south-1.amazonaws.com/media/logo.png"
+                        alt="insight_guru" height="30" class="logo_sample">
+  <img src="https://iguru-serverless-stage.s3-ap-southeast-1.amazonaws.com/media/mineLogo.svg"
+                        alt="Group-4" height="30">                  
+                    -->
 
 <body>
-    <div class="container">
-        <div class="in-flex in-logo-name-tagline-height">
-            <div class="col50">
-                <div class="in-flex-center-middle-left">
-                    <img src="https://iguru-serverless-test.s3-ap-south-1.amazonaws.com/media/logo.png"
-                        alt="insight_guru" height="30" class="logo_sample">
-                </div>
-            </div>
-            <div>
-                <div class="in-flex-center-middle-right">
-                    <img src="https://iguru-serverless-stage.s3-ap-southeast-1.amazonaws.com/media/mineLogo.svg"
-                        alt="Group-4" height="30">
-                </div>
-            </div>
+
+    <div class="infoContent">
+        <!-- <div class="infoBox"> -->
+        <img src="https://iguru-serverless-stage.s3-ap-southeast-1.amazonaws.com/media/Group%205.svg" alt="not found"
+            height="110">
+        <p class="text m-5">This is to certify that</p>
+        <p class="heading font-bold">Simple Sample</p>
+        <p class="text disctription">is an iGem Candidate within the iGuru Mine</p>
+        <div class="userDiscripyion">
+            <p class="text userInfo">The iGem Candidate has finished a dynamic suite of psychometric assessments
+                comprising of questionaaires and tests</p>
         </div>
-        <div class="infoContent">
-            <div class="infoBox">
-                <img src="https://iguru-serverless-stage.s3-ap-southeast-1.amazonaws.com/media/Group%205.svg"
-                    alt="not found" height="110">
-                <p class="text m-5">This is to certify that</p>
-                <p class="heading font-bold">Simple Sample</p>
-                <p class="text disctription">is an iGem Candidate within the iGuru Mine</p>
-                <div class="userDiscripyion">
-                    <p class="text userInfo">The iGem Candidate has finished a dynamic suite of psychometric assessments
-                        comprising of questionaaires and tests</p>
-                </div>
-                <div class="assignmetSection" id='vccc'>
-                    <p class="text font-bold mt-15 ">iGuru Occupation</p>
-                    <p class="text text-12 m-0">Assessments</p>
-                </div>
-                <div class="m-0">
-                    <p id="assessments" class="assessments"></p>
-                </div>
-                <div class="assignmetSection">
-                    <p class="text font-bold m-0">iGuru Occupation</p>
-                    <p class="text text-12 m-4 ">Workfit</p>
-                </div>
-                <div class="synopsis text-13 mt-5">
-                    <p class="m-0">This smart solution empowers managers to evaluate the assessment scores of the iGem
-                        Candidate, to
-                        objectively guage their alignment with the organization’s culture as also their aptitude and
-                        competence for varied jobs the organizations</p>
-                </div>
-                <div class="administrors m-0">
-                    <p id="administrors"
-                        style=" display: flex; flex-direction: row; justify-content: space-between;margin: 5px;"></p>
-                </div>
-                <div class="validity" id="validity">
-
-                </div>
-            </div>
-
+        <div class="assignmetSection" id='vccc'>
+            <p class="text font-bold mt-15 ">iGuru Occupation</p>
+            <p class="text text-12 m-0">Assessments</p>
+        </div>
+        <div class="m-0">
+            <p id="assessments" class="assessments"></p>
+        </div>
+        <div class="assignmetSection">
+            <p class="text font-bold m-0">iGuru Occupation</p>
+            <p class="text text-12 m-4 ">Workfit</p>
+        </div>
+        <div class="synopsis text-13 mt-5">
+            <p class="m-0">This smart solution empowers managers to evaluate the assessment scores of the iGem
+                Candidate, to
+                objectively guage their alignment with the organization’s culture as also their aptitude and
+                competence for varied jobs the organizations</p>
+        </div>
+        <div class="administrors m-0">
+            <p id="administrors"
+                style=" display: flex; flex-direction: row; justify-content: space-between;margin: 5px;"></p>
+        </div>
+        <div class="validity" id="validity">
 
         </div>
+        <!-- </div> -->
+
+
     </div>
     <script>
         var validityArr = { validFrom: "January 2023", validTill: "December 2023" }
